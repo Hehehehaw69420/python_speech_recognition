@@ -38,13 +38,13 @@ if __name__ == "__main__":
     list_running_processes()  # Check the running processes before testing
     command = listen_for_command()
     if command:
-        if "nothing ma'am" in command:
+        if "your command" in command: #change "your command" for whatever you want to say for it to execute
+            close_app_by_name("chrome") #you can change app by typing app name ex:- chrome
+        elif "your command" in command:
             close_app_by_name("chrome")
-        elif "nothing mam" in command:
+        elif "your command" in command:
             close_app_by_name("chrome")
-        elif "nothing mom" in command:
-            close_app_by_name("chrome")
-        elif "nothing mum" in command:
+        elif "your command" in command:
             close_app_by_name("chrome")
         else:
             print("No recognized application to close.")
